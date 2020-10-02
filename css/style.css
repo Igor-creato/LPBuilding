@@ -507,6 +507,27 @@ section {
 .tour-btn {
   font-size: 1.3rem;
 }
+.upsell {
+  background-color: #286b0a;
+}
+.upsell-blocks {
+  margin-top: 3rem;
+  text-align: center;
+}
+.upsell-block {
+  margin-top: 3rem;
+  min-height: 30rem;
+  text-align: center;
+  color: #fff;
+}
+.upsell-block img {
+  display: inline-block;
+  width: 100%;
+  min-width: 30rem;
+}
+.upsell-block p {
+  font-size: 2rem;
+}
 /*Всплывающие окна оформление*/
 .popup {
   display: none;
@@ -612,6 +633,9 @@ section {
   }
   .scheme {
     background-size: 59rem;
+  }
+  .upsell-block img {
+    min-width: 22rem;
   }
 }
 @media (max-width: 767px) {

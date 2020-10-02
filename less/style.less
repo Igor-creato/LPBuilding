@@ -34,6 +34,7 @@
 @light: #fff;
 @border-input: #dddddd;
 @problems-color: #e8e8e8;
+@upsell-bg: #286b0a;
 
 /*Basic settings*/
 html {
@@ -649,6 +650,35 @@ section {
     }
 }
 
+// Доп. услуги
+.upsell {
+    background-color: @upsell-bg;
+
+
+    &-blocks {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    &-block {
+        margin-top: 3rem;
+
+        img {
+            display: inline-block;
+            width: 100%;
+            min-width: 30rem;
+        }
+
+        p {
+            font-size: 2rem;
+        }
+
+        min-height: 30rem;
+        text-align: center;
+        color: @light;
+    }
+}
+
 /*Всплывающие окна оформление*/
 .popup {
     display: none;
@@ -793,6 +823,14 @@ section {
     .scheme {
         // background: #fff url(../img/advantages/bg.png) bottom right -20rem no-repeat;
         background-size: 59rem;
+    }
+
+    .upsell-block {
+
+
+        img {
+            min-width: 22rem;
+        }
     }
 }
 
