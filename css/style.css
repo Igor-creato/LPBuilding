@@ -559,6 +559,21 @@ section {
 .contacts-btn {
   padding: 1rem 1rem;
 }
+footer {
+  padding: 4rem 0;
+}
+.footer {
+  padding-top: 0.5rem;
+}
+.footer-contacts {
+  text-align: center;
+}
+.footer-contacts p {
+  margin: 0;
+}
+.footer-dev-logo {
+  text-align: right;
+}
 /*Всплывающие окна оформление*/
 .popup {
   display: none;
@@ -673,6 +688,22 @@ section {
   }
   .upsell-block img {
     min-width: 22rem;
+  }
+  .contacts {
+    background: none;
+    background-color: #f5f5f5;
+  }
+  .contacts-form {
+    margin-top: 3rem;
+  }
+  footer {
+    text-align: center;
+  }
+  .footer-contacts {
+    margin: 2rem 0;
+  }
+  .footer-dev-logo {
+    text-align: center;
   }
 }
 @media (max-width: 767px) {

@@ -721,6 +721,27 @@ section {
     }
 }
 
+// Подва
+footer {
+    padding: 4rem 0;
+}
+
+.footer {
+    padding-top: 0.5rem;
+
+    &-contacts {
+        text-align: center;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &-dev-logo {
+        text-align: right;
+    }
+}
+
 /*Всплывающие окна оформление*/
 .popup {
     display: none;
@@ -881,6 +902,29 @@ section {
             min-width: 22rem;
         }
     }
+
+    .contacts {
+        background: none;
+        background-color: @bg-light;
+
+        &-form {
+            margin-top: 3rem;
+        }
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer {
+        &-contacts {
+            margin: 2rem 0;
+        }
+
+        &-dev-logo {
+            text-align: center;
+        }
+    }
 }
 
 
@@ -946,9 +990,7 @@ section {
         }
     }
 
-    .main h1 {
-        // font-size: 2rem;
-    }
+
 
     .tour-btn {
         font-size: 1.3rem;
