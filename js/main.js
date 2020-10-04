@@ -71,3 +71,17 @@ jQuery(document).ready(function () {
       return false;
    })
 });
+
+$('form').submit(function (event) {
+   event.preventDefault();
+   $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+   }).done(function () {
+      $(this).find("input").val("");
+      alert("Спасибо сообщение отправлено!");
+      $("#form").trigger("reset");
+   });
+   return false;
+});
