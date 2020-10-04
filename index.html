@@ -74,11 +74,23 @@
                   Для расчёта точной стоимости <br />закажите
                   <strong>выезд замерщика</strong>
                 </h2>
-                <form class="form" action="#">
+                <form class="form" action="mailer/smart.php" method="POST">
                   <label for="name-2">Ваше имя</label>
-                  <input class="form-input" required id="name-2" type="text" />
+                  <input
+                    class="form-input"
+                    required
+                    id="name-2"
+                    type="text"
+                    name="user_name"
+                  />
                   <label for="phone">Номер телефона</label>
-                  <input class="form-input" required id="phone" type="text" />
+                  <input
+                    class="form-input"
+                    required
+                    id="phone"
+                    type="text"
+                    name="user_phone"
+                  />
                   <button class="form-btn button" type="submit">
                     оставьте заявку
                   </button>
@@ -393,7 +405,7 @@
               data-wow-delay="0.2s"
             >
               <h3>Хотите так же? Оставьте Ваши контактные данные</h3>
-              <form action="#" class="form">
+              <form class="form" action="mailer/smart.php" method="POST">
                 <div class="row">
                   <div class="col-md-12 col-lg-6">
                     <label for="name-3">Ваше имя</label>
@@ -402,6 +414,7 @@
                       required
                       id="name-3"
                       type="text"
+                      name="user_name"
                     />
                   </div>
                   <div class="col-md-12 col-lg-6">
@@ -411,6 +424,7 @@
                       required
                       id="phone-1"
                       type="text"
+                      name="user_phone"
                     />
                   </div>
                 </div>
@@ -761,15 +775,18 @@
                 <h2 class="main-form-header">
                   Оставьте контактные данные<br />для связи
                 </h2>
-                <form class="form" action="#">
+                <form class="form" action="mailer/smart.php" method="POST">
                   <label for="input-name-1">Ваше имя</label>
                   <input
                     class="form-input"
                     required
                     id="input-name-1"
                     type="text"
+                    name="user_name"
                   />
-                  <label for="phone-2">Номер телефона</label>
+                  <label for="phone-2" type="text" name="user_phone"
+                    >Номер телефона</label
+                  >
                   <input class="form-input" required id="phone-2" type="text" />
                   <button class="form-btn button tour-btn" type="submit">
                     Записаться на просмотр
@@ -861,18 +878,36 @@
               <h2 class="contacts-form-header">
                 Оставьте контактные данные для связи
               </h2>
-              <form class="form" action="#">
+              <form class="form" action="mailer/smart.php" method="POST">
                 <label for="name-4">Ваше имя</label>
-                <input class="form-input" required id="name-4" type="text" />
+                <input
+                  class="form-input"
+                  required
+                  id="name-4"
+                  type="text"
+                  name="user_name"
+                />
                 <label for="phone-3">Номер телефона</label>
-                <input class="form-input" required id="phone-3" type="text" />
+                <input
+                  class="form-input"
+                  required
+                  id="phone-3"
+                  type="text"
+                  name="user_phonr"
+                />
                 <label for="email">Email</label>
-                <input class="form-input" id="email" type="text" />
+                <input
+                  class="form-input"
+                  id="email"
+                  type="text"
+                  name="user_email"
+                />
                 <label for="message-2">Сообщение</label>
                 <textarea
                   class="form-textarea"
                   id="message-2"
                   rows="5"
+                  name="user_message"
                 ></textarea>
                 <button class="form-btn button contacts-btn" type="submit">
                   Записаться на просмотр
@@ -922,13 +957,30 @@
           <h4 class="popup-header">Заинтересовало?</h4>
           <p>Оставьте свои контактные данные <br />для связи</p>
           <div class="form popup-form">
-            <form action="#">
+            <form action="mailer/smart.php" method="POST">
               <label for="name-5">Ваше имя</label>
-              <input class="form-input" required id="name-5" type="text" />
+              <input
+                class="form-input"
+                required
+                id="name-5"
+                type="text"
+                name="user_name"
+              />
               <label for="phone-4">Номер телефона</label>
-              <input class="form-input" required id="phone-4" type="text" />
+              <input
+                class="form-input"
+                required
+                id="phone-4"
+                type="text"
+                name="user_phone"
+              />
               <label for="message">Сообщение</label>
-              <textarea class="form-input" id="message" rows="5"></textarea>
+              <textarea
+                class="form-input"
+                id="message"
+                rows="5"
+                name="user_message"
+              ></textarea>
               <button class="form-btn button" type="submit">
                 оставьте заявку
               </button>
