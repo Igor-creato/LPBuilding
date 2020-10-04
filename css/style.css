@@ -844,6 +844,11 @@ footer {
     background-size: 59rem;
   }
 
+  .tour {
+    background-position: top left;
+  }
+
+
   .upsell-block img {
     min-width: 22rem;
   }
